@@ -1,3 +1,7 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -9,23 +13,354 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* ------HEADER-------*/
+
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  background: #f2f2f2;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 228px;
+  height: 32px;
+  background-image: url("../images/logo_place_header.svg");
+}
+
+.header__place_logo {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+font-size: 102px;
+line-height: 96px;
+font-weight: 600;
+margin: 0;
+padding-left: 64px;
+max-width: 50%;
+}
+
+.header__subtitle_text {
+position: absolute;
+left: 64px;
+bottom: 30px;
+max-width: 360px;
+line-height: 25px;
+font-size: 18px;
+font-weight: normal;
+}
+
+.header__subtitle_text_link {
+  color: #2f80ed;
+  text-decoration: none;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background: #2f80ed;
+  position: absolute;
+  right: 0;
+  top: 64px;
+
 }
 
-/* и элемента с модификатором вида ключ-значение */
+.main-illustration {
+  background-image: url("../images/header-image.png");
+  width: 765px;
+  height: 608px;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* --------- DESCRIPTION ------*/
+
+.description {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.two_columns {
+  width: 80%;
+display: flex;
+justify-content: space-between;
+}
+
+.main_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  min-width: 784px;
+}
+
+.brief {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  margin: 0;
+  width: 175px;
+}
+
+
+.paragraph {
+  margin: 0;
+  padding-bottom: 30px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two_columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ---------DIGITS---------*/
+
+.digits {
+  padding-bottom: 100px;
+}
+
+.section_title {
+margin: 0;
+padding-top: 100px;
+text-align: center;
+line-height: 1.15;
+font-size: 60px;
+font-weight: 600;
+}
+
+.section_subtitle {
+margin: 0;
+padding-top: 20px;
+text-align: center;
+line-height: 34px;
+font-size: 24px;
+font-weight: normal;
+}
+
+.table {
+  padding-top: 60px;
+  width: 1110px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly; 
+}
+
+.table__cell {
+width: 250px;
+}
+
+.table__heading {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.table__text {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  padding-top: 20px;
+}
+
+.feynman {
+  height: 890px;
+  background-color: #f2f2f2;
+  background-image: url("../images/feynman.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 867px 637px;
+  position: relative;
+}
+
+  .feynman_title {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: 600;
+    width: 648px;
+    padding-top: 100px;
+  }
+
+.feynman_subtitle {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  padding-top: 70px;
+}
+
+.feynman_link {
+position: absolute;
+right: 48px;
+bottom: 45%;
+font-size: 36px;
+line-height: 51px;
+font-weight: normal;
+text-decoration: none;
+color: #2f80ed;
+} 
+
+.kaufman {
+height: 877px;
+background-color: #1f1f1f;
+position: relative;
+overflow: hidden;
+z-index: -2;
+}
+
+.section_title_theme_dark {
+  margin: 0 auto;
+  color: white;
+  padding-top: 90px;
+  width: 60%;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  z-index: 0;
+}
+
+.section_subtitle_theme_dark {
+  margin: 0 auto;
+  color: white;
+  padding-top: 20px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  z-index: 0;
+}
+
+.table_theme_dark {
+  padding-top: 80px;
+  width: 1110px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly; 
+}
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  z-index: 0;
+}
+
+.table__heading_theme_dark {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.table__text_theme_dark {
+  margin: 0;
+  padding-top: 20px;
+  
+}
+
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  background-image: url("../images/kaufman-triangle.svg");
+  position: absolute;
+  top: 0;
+  right: -210px;
+  z-index: -1;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  min-width: 350px;
+  color: white;
+}
+
+.footer__place_logo {
+  background-image: url("../images/logo_place_footer.svg");
+}
+
+.footer__column {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  text-align: center;
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column_left {
+  display: flex;
+  justify-content: end;
+}
+
+.footer__column_heading {
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer__column_links {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column_link {
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  color: white;
+}
+
+.footer__column_content_social {
+  padding-left: 200px;
+}
+
+.footer__column_link_left_YT::before {
+ content: url("../images/youtube-icon.svg");
+}
+
+.footer__column_link_left_VK::before {
+  content: url("../images/vk_color_white.svg");
+}
+
+.footer__column_link_left_TT::before {
+  content: url("../images/tiktok-icon.svg");
 }
