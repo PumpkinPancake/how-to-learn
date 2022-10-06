@@ -288,8 +288,10 @@ body {
 .footer {
   background-color: #1f1f1f;
   color: white;
-  min-width: 350px;
+  min-height: 350px;
   padding: 60px 0 40px;
+  display: flex;
+  box-sizing: border-box;
 }
 
 .footer__columns {
