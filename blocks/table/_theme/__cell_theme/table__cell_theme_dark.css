@@ -1,0 +1,13 @@
+.table__cell_theme_dark {
+    width: 200px;
+    color: white;
+    margin-right: 0;
+    padding-top: 80px;
+    list-style: none;
+    z-index: 1;
+  }
+  
+  .table__cell_theme_dark:last-of-type {
+    padding-bottom: 90px;
+  }
+  
