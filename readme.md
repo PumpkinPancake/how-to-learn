@@ -14,3 +14,5 @@
 * Модификаторы
 * iframe
 * import
+------
+Ссылка на проект: https://pumpkinpancake.github.io/how-to-learn/
